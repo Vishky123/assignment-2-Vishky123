@@ -28,6 +28,6 @@ public class MyMain {
         for (int i = 0; i < data; i++) {
             child.insert(root, sc.nextInt());
         }
-
+        view.printPostorder(root);
     }
 }
