@@ -27,7 +27,7 @@ public class MyMain {
             child.insert(root, sc.nextInt());
         }
 
-
+        child.leftView(root);
     }
 }
 
