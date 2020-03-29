@@ -98,7 +98,97 @@ public class MyBinarySearchTree {
 
     }
 
-    public void printLeftTree(TreeNode root) {
+    public void leftTree(TreeNode root) {
+
+        if (root == null)
+
+            return;
+
+
+        // add root
+
+        var.add(root);
+
+
+        // Delimiter
+
+        var.add(null);
+
+
+        while (var.size() > 0) {
+
+            TreeNode temp = var.peek();
+
+
+            if (temp != null) {
+
+
+                // Prints first node
+
+                // of each level
+
+                System.out.print(temp.getData() + " ");
+
+
+                // add children of all nodes at
+
+                // current level
+
+                while (var.peek() != null) {
+
+
+                    // If left child is present
+
+                    // add into queue
+
+                    if (temp.getLeft() != null)
+
+                        var.add(temp.getLeft());
+
+
+                    // If right child is present
+
+                    // add into queue
+
+                    if (temp.getRight() != null)
+
+                        var.add(temp.getRight());
+
+
+                    // remove the current node
+
+                    var.remove();
+
+
+                    temp = var.peek();
+
+                }
+
+                var.add(null);
+
+            }
+
+
+            // remove the delimiter of
+
+            // the previous level
+
+            var.remove();
+        }
     }
 
+    public void leftView(TreeNode root) {
+
+        // Queue to store all
+
+        // the nodes of the tree
+
+        var = new LinkedList<TreeNode>();
+
+
+        leftTree(root);
+
+    }
 }
+
+
