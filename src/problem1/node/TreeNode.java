@@ -1,6 +1,6 @@
 /*
  *  Created by IntelliJ IDEA.
- *  User: Vaibhav
+ *  User: Vishal
  *  Date: 23-Mar-20
  *  Time: 7:17 PM
  */
@@ -10,4 +10,10 @@ public class TreeNode {
     private TreeNode right;
     private TreeNode left;
     private int data;
+
+    public TreeNode(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
 }
