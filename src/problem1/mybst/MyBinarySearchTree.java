@@ -94,7 +94,11 @@ public class MyBinarySearchTree {
 
         }
 
-        System.out.println("count of Nodes without left child: " + count);
+        System.out.println("No of  Nodes without left child: " + count);
 
     }
+
+    public void printLeftTree(TreeNode root) {
+    }
+
 }
