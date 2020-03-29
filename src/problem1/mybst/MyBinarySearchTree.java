@@ -30,4 +30,18 @@ public class MyBinarySearchTree {
 
         return root;
     }
+
+    public void inorderRecord(TreeNode root) {
+
+        if (root.getLeft() != null) {
+
+            inorderRecord(root.getLeft());
+
+            System.out.println(root.getData());
+
+            inorderRecord(root.getRight());
+
+        }
+
+    }
 }
