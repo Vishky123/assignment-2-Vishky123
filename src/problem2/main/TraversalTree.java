@@ -2,7 +2,7 @@ package problem2.main;
 import problem1.node.TreeNode;
 
 public class TraversalTree {
-    public class Traversal {
+    public static class Traversal {
         void printPostorder(TreeNode node) {
 
             if (node == null)
