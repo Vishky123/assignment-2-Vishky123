@@ -7,5 +7,7 @@
 package problem1.node;
 
 public class TreeNode {
-
+    private TreeNode right;
+    private TreeNode left;
+    private int data;
 }
